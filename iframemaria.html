@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Portfolio</title>
+	<link rel="icon" type="image/jpg" href="favicon-black.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css" integrity="sha512-Z0kTB03S7BU+JFU0nw9mjSBcRnZm2Bvm0tzOX9/OuOuz01XQfOpa0w/N9u6Jf2f1OAdegdIPWZ9nIZZ+keEvBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<style type="text/css">
+		html{
+			scroll-behavior: smooth;
+		}
+
+		body{
+			background:radial-gradient(circle,#ff2a75 25%,rgba(73,22,94,1)75%);
+			background-size:cover;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+
+
+			 
+		}
+		 .logo{ width: 100%;
+
+			 
+			 
+
+			 	}
+		.logo img{display: block;
+			 margin: 0 auto;
+		}
+
+
+		nav{
+			 
+			 
+			display: flex;
+			 
+			justify-content: space-between;
+			padding: 2% 5%;
+
+
+
+		}
+		 
+		nav .myname{
+
+			width: 17%;
+			padding: 1%;
+			text-align: center;
+			 
+			font-family: 'Oswald', sans-serif;
+			color: cyan;
+			font-size: 30px;
+			margin-left: 7%;
+		}
+		nav .myname .desi{
+			color: purple;
+		}
+		nav .myname .sepe{
+			color: #9D00FF;
+		}
+		nav .myname:hover{
+			box-shadow: 0 0 5px 3px orange;
+		}
+		nav .details{ margin-right: 8%;
+			width: 46%;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			 
+		}
+		nav .details a{
+			font-family: 'Roboto', sans-serif;
+			text-decoration: none;
+			font-size: 20px;
+			color: cyan;
+			 
+			 
+			background: transparent;
+			 
+			padding: 1% 1%;
+		}
+		nav .details a:hover{
+			
+			color: orange;
+			border-bottom: 1px solid orange;
+
+			 
+			transition: 0.2s ease;
+
+
+		}
+		.main{
+
+			width: 55%;
+			margin-right: -2%; 	 
+			float: right;
+		}
+		.main .name { 
+			margin-top: 4%;
+			 
+			padding: 2% 0;
+			font-family: 'Roboto', sans-serif;
+		}
+		.main .name p{
+			font-size: 25px;
+			color: white;
+
+
+
+		}
+		.main .name h1{
+			font-size: 60px;
+			color: white;
+            font-weight: 600;
+            margin-top: -4%;
+		}
+		 
+		.main .name h3{
+			font-size: 20px;
+			color: white;
+			margin-top: -4%;
+		}
+		.main .name button{
+			width: 200px;
+			height: 50px;
+			border: 2px solid white;
+			color: white;
+			font-size: 25px;
+			padding: 1% 1%;
+			 background:transparent;
+			border-radius: 30px;
+			margin-top: -5%;
+
+		}
+		.main .name button:hover{
+			
+			border:2px solid
+			cyan;
+
+			color: black;
+			transition: 0.5s ease;
+			cursor: pointer;
+			transform: translateY(-5px);
+			box-shadow:inset 0 0 10px 10px  cyan,inset 0 0 80px 10px cyan,inset 0 0 100px 10px cyan,inset 0 0 70px 10px  cyan;
+
+		}
+		.name .icn{
+			color: white;
+			font-size: 25px;
+			font-family: 'Roboto', sans-serif;
+		}
+		.name .icn a{
+			text-decoration: none;
+			color: white;
+
+		}
+		.name .icn a img{
+			border-radius: 20px;
+		}
+         
+         .back2{
+         	
+         		background-color: white;
+         		 
+         	margin: 0 5%;
+         	 
+         	padding-bottom: 5%;
+
+         }
+		.exp{
+			margin-top: 10%;
+			 
+			margin-left: 10%;
+		}
+		.exp p{letter-spacing: 2px;
+			padding-top: 2%;
+			font-family: 'Montserrat',sans-serif;
+
+		}
+		.exp h1{letter-spacing: 2px;
+			font-size: 45px;
+			font-weight: 520;
+			font-family: 'Montserrat',sans-serif;
+		}
+		.exp .sp1 .work{
+			color: #9949cc;
+
+		}
+		.exp  .sp1  .with {
+			opacity: 0.75;
+
+
+		}
+		.exp  .sp1 .line{
+			opacity: 0.75;
+		}
+		.exp  .sp1 .line2 {
+			 width: 2%;
+			 height: 2px;
+			background-color:#9949cc; 
+			margin-top: 1%;
+			 
+
+		}
+		.exp  .sp1:hover .line2 {
+			width: 13%;
+			transition: 0.5s ease;
+		}
+
+		.container{
+			width: 80%;
+			margin: 2% 9%;
+
+			background-color: yellow;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+		}
+		.container .box{
+			width:50%;
+			background-color: #9949cc;
+			height: 400px;
+			margin: 2% 1%;
+
+			 
+
+
+		}
+		.container .box:hover{
+			box-shadow: 0 0 5px 3px cyan;
+		     transform: scale(1.1);
+		     transition: 0.3s ease;
+		}
+
+		.dp{
+			border-radius: 50%;
+			float: left;
+			margin:  4% 0% 1% 25%;
+			 
+
+		}
+		.dp:hover{
+			box-shadow: 0 0 7px 4px cyan;
+			transition: 0.3s ease-in-out;
+
+		}
+
+		.back3{
+			background-color: white;
+			padding-bottom:0 5%;
+			margin: 0% 5%;
+		}
+
+		.container3{
+			width: 100%;
+			margin: 2% 0;
+
+			 
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+		}
+
+		.container3 .box{
+			width:45%;
+			font-family: 'Montserrat',sans-serif;
+			
+			height: 400px;
+			margin: 2% 1%;
+			padding: 1% 2%;
+		}
+		.container3 #box1 {
+			background-color: #7b32d5;
+			color: white;
+			 
+		}
+		.container3 #box2{
+			background-color: #ff2a75;
+			color: white;
+		}
+		.container3 #box3{
+			color: white;
+			background-color: #37a7ff;
+		}
+		.container3 #box1  h1{
+			font-size: 42px;
+			font-weight: 400;
+		} 
+		.container3   #box1  h4{
+			font-size: 25px;
+			font-weight: 400;
+			text-align: right;
+
+		} 
+		.container3 #box1  h4 .found{
+			font-size: 20px;
+		}
+		.container3 #box1  p{
+			font-size: 17px;
+			font-weight: 400;
+		}
+
+
+		.container3 #box2  h1{
+			font-size: 42px;
+			font-weight: 400;
+		} 
+		.container3   #box2  h4{
+			font-size: 25px;
+			font-weight: 400;
+			text-align: right;
+
+		} 
+		.container3 #box2  h4 .found{
+			font-size: 20px;
+		}
+		.container3 #box2  p{
+			font-size: 17px;
+			font-weight: 400;
+		}
+
+
+
+
+        .container3 #box3  h1{
+			font-size: 42px;
+			font-weight: 400;
+		} 
+		.container3   #box3  h4{
+			font-size: 25px;
+			font-weight: 400;
+			text-align: right;
+
+		} 
+		.container3 #box3  h4 .found{
+			font-size: 20px;
+		}
+		.container3 #box3  p{
+			font-size: 17px;
+			font-weight: 400;
+		}
+
+
+
+
+
+
+
+
+
+		.container3 .box:hover{
+			box-shadow: 0 0 5px 3px cyan;
+		     transform: scale(1.1);
+		     transition: 0.3s ease;
+		}
+		.exp2{
+			font-family: 'Montserrat',sans-serif;
+		
+		      margin: 0 5%;
+
+			 
+			 
+		}
+		.exp2 p{
+			padding-top: 2%;
+			letter-spacing: 3px;
+			 
+
+		}
+		.exp2 h1{
+			font-size: 45px;
+			font-weight: 520;
+			letter-spacing: 2px;
+
+			 
+		}
+		.exp2 .sp2 .work{
+			color: #ff2a75;
+
+		}
+		.exp2  .sp2  .with {
+			opacity: 0.75;
+
+
+		}
+		.exp2  .sp2 .line{
+			opacity: 0.75;
+		}
+
+		.exp2  .sp2 .line3{
+			 width: 2%;
+			 height: 4px;
+			background-color:#ff2a75; 
+			 
+
+		}
+		.exp2  .sp2:hover .line3 {
+			width: 25%;
+			transition: 0.8s ease;
+		}
+
+		.product{
+			  background:radial-gradient(circle,rgba(73,22,94,1)25%,rgba(0,0,0,1)100%);
+			 
+			
+          text-align: center;
+          padding: 5% 2%;
+          font-family: 'Montserrat',sans-serif;
+          margin-top: -1.8%;
+       
+
+		}
+
+		.product .talk{
+			
+			font-size: 55px;
+			height: 90px;
+			color: white;
+			font-weight: 200;
+
+
+		}
+
+		.product button{
+
+			width: 25%;
+			height:60px;
+			border-radius: 40px;
+			background:transparent;
+			border: 2px solid #37a7ff;
+			color: white;
+			font-size: 20px;
+			 
+
+			 
+
+			
+		}
+		.product button:hover{
+			 
+			transform: translateY(-6px);
+			transition: 0.2s ease-in-out;
+			cursor: pointer;
+			box-shadow:inset 0 0 10px 10px  #37a7ff,inset 0 0 80px 10px #37a7ff,inset 0 0 100px 10px #37a7ff,inset 0 0 70px 10px  #37a7ff;
+
+		}
+		footer{
+			background-color:  #37324b;
+			margin-top: -2.5%;
+			width: 100%;
+		}
+
+		.ftname{
+			text-align: center;
+			font-size: 25px;
+			color: white;   font-family: 'Montserrat',sans-serif;
+			padding: 3% 0%;
+
+		}
+		.ftname .ud{
+			 
+			font-weight: 600;
+			color: #37a7ff;
+		}
+		.ftname .ara{
+			font-weight: 200;
+		}
+
+		       .fticons{
+		       	width: 30%;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		 
+			transform: translateX(120%);
+			padding-bottom: 5%;
+
+			 
+		}
+		.fticons i{
+			color: white;
+			font-size: 3em;
+		}
+
+		.design{
+			text-align: center;
+			font-size: 20px;
+			 font-family: 'Montserrat',sans-serif;
+			 padding: 2.3% 0;
+			 background-color: #322e45;
+			 color: white;
+
+		}
+		.design span{
+			opacity: 0.75;
+		}
+
+		.glow{ 
+			opacity: 0.75;
+
+			 
+
+
+			  
+		}
+
+		.glow:hover{
+			  
+			cursor: pointer;
+			opacity: 1;
+			transition: 0.2s ease-in-out;
+			 
+			 
+		}
+
+
+		.ftname .lineft{
+			width: 7%;
+			height: 4px;
+			background-color:#37a7ff;
+			transform: translateX(670%) translateY(-700%);
+
+		}
+
+		.exp2 h1 .linehp{
+			width: 1%;
+			height: 2px;
+			background-color: #ff2a75;
+			margin: 1.5% 0%;
+
+		}
+		.exp2 h1:hover .linehp{
+			width: 13%;
+			 
+			transition: 0.8s   ease;
+		}
+
+
+
+		.copy{
+		 	 
+		 	 
+		 	text-align: center;
+		 	font-size: 20px;
+		 	 padding: 1%;
+		 	font-family: 'Montserrat',sans-serif;
+		 	background-color: #322e45;
+		 	color: white;
+		 	margin-top: -4%;
+
+		 }
+
+
+		 .know{
+		 	text-decoration: none;
+		 }
+
+
+
+		 .skills{
+		 	display: flex;
+		 	justify-content: space-between;
+		 	align-items: center;
+		 	padding: 3% 1%;
+		 	width: 50%;
+
+		 	 
+		 	height: 20vh;
+		margin:0 auto;
+		 	
+		 	
+		 	border-top: 1px solid white;
+		 }
+		 .skills .skill1{
+		 
+		 	border-radius: 5%;
+		 	width: 100px;
+		 	height: 13vh;
+		 	cursor: pointer;
+		 	 
+		 	text-align: center;
+		 	display: grid;
+		    align-items: center;
+		    padding: 1%;
+
+
+
+		   
+
+
+
+		 }
+		  .skills  i{
+		  	font-size: 2em;
+		  	
+		  }
+
+		  .skills  .skill1:nth-child(1) i{
+		  	color: lightgreen;
+		  }
+		  .skills  .skill1:nth-child(2) i{
+		  	color: #FEC04F;
+		  }
+		  .skills  .skill1:nth-child(3) i{
+		  	color:  #ACDDDE;
+		  }
+		  .skills  .skill1:nth-child(4) i{
+		  	color: #FEF8DD;
+		  }
+
+
+		  .skills .skill1 h4{
+		  	font-weight: 400;
+		  	color: white;
+		  	 font-family: 'Roboto', sans-serif;
+		  }
+
+
+	      .skills  .skill1:nth-child(1){
+	           	border-bottom: 2px solid  lightgreen;
+          }
+          .skills  .skill1:nth-child(2){
+ 	          border-bottom: 2px solid #FEC04F;
+
+          }
+           .skills  .skill1:nth-child(3){
+            	border-bottom: 2px solid #ACDDDE;
+          }
+           .skills  .skill1:nth-child(4){
+                 	border-bottom: 2px solid #FEF8DD;
+
+          }
+
+          .skills  .skill1:nth-child(1):hover{
+	           	border : 2px solid lightgreen;
+	           	transition: 0.8s ease-in-out;
+
+          }
+          .skills  .skill1:nth-child(2):hover{
+	           	border : 2px solid #FEC04F;
+	           	transition: 0.8s ease-in-out;
+	            
+          }
+          .skills  .skill1:nth-child(3):hover{
+	           	border : 2px solid #ACDDDE;
+	           	transition: 0.8s ease-in-out;
+	            
+          }
+          .skills  .skill1:nth-child(4):hover{
+	           	border : 2px solid #FEF8DD;
+	           	transition: 0.8s ease-in-out;
+	            
+          }
+
+
+          .Switch{
+          	float: right;
+          	margin-top: -3%;
+          	   font-family: 'Montserrat',sans-serif;
+          }
+
+          .Switch label{
+          	color: white;
+          	font-size: 12px;
+          }
+
+          
+
+
+
+
+       
+       
+
+
+
+
+	</style>
+</head>
+<body>
+
+	 <div class="logo"><img src="ddblue.png" width="130" height="110" ></div>
+		 
+
+	<div class="main">
+		 
+		<div class="name">
+			<p>Hi, I am</p>
+			<h1>Uday Aravind.</h1>
+			<h3>Frontend Developer</h3>
+			<br>
+			<a href="#1" class="know"><button>Know More</button></a>
+			<br>
+			<br>
+
+
+			<div class="icn">
+				Join me here | <a href="https://www.instagram.com/udayaravind/"> <i class="fa-brands fa-instagram fa-xl"  ></i> Instagram</a>
+			</div>
+			</div>
+
+		
+		
+	</div>
+	<img class="dp" src="IMG20230618125208s.jpg" width="250" height="250">
+	<br>
+	
+	<br>
+
+	<div class="skills">
+		<div class="skill1"><i class="fa-solid fa-lightbulb"></i>
+			<h4>Graphic Design</h4></div>
+		<div class="skill1"><i class="fa-solid fa-globe"></i>
+			<h4>Web design</h4></div>
+		<div class="skill1"><i class="fa-solid fa-database"></i>
+			<h4>Software</h4></div>
+		<div class="skill1"><i class="fa-solid fa-tablet-screen-button"></i>
+			<h4>Application</h4></div>
+		
+	</div>
+	<br>
+<div class="back2">
+	<div class="exp">
+		<p id="1">EXCLUSIVELY</p>
+		<h1 class="sp1"><span class="work">works </span> 
+			<span class="with">with</span> <br> 
+			
+
+		 <span class="line">Startups and founders</span><br>
+		 <div class="line2"></div>
+		  </h1>
+	</div>
+
+	<div class="container">
+		<div class="box">item1</div>
+		<div class="box">item2</div>
+		<div class="box"> item3</div>
+
+
+		
+	</div>
+</div>
+ 
+<div class="back3">
+	<div class="exp2">
+		<p>HAPPY</p>
+		<h1 class="sp2"><span class="work">Client </span> 
+			<span class="with">hello</span> <br> 
+			 
+
+		 <span class="line">testimonials</span> 
+		 
+		 <br>
+		<div class="linehp"></div></h1>
+	</div>
+
+	<div class="container3">
+		<div class="box" id="box1">
+			<h1>Pixel Perfect design</h1>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore omnis sapiente hic odio quod voluptates alias nobis excepturi perspiciatis natus voluptatem exercitationem voluptas quibusdam deserunt impedit libero rerum adipisci, quos nisi velit sunt! Quibusdam magni laborum perspiciatis, eaque quos nobis?</p>
+			<h4>-John Doe<br>
+				<span class="found">Founder,Arrow</span>
+			 </h4>
+		 </div>
+		<div class="box" id="box2">
+			      <h1>Minimal and Clean</h1>
+			      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore omnis sapiente hic odio quod voluptates alias nobis excepturi perspiciatis natus voluptatem exercitationem voluptas quibusdam deserunt impedit libero rerum adipisci, quos nisi velit sunt! Quibusdam magni laborum perspiciatis, eaque quos nobis?</p>
+			      <h4>- Rocky Hych<br>
+				<span class="found">CTO, Upside Down</span>
+			 </h4>
+
+		         </div>
+		<div class="box" id="box3">  
+                       <h1>Built with Bootstrap</h1>
+                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore omnis sapiente hic odio quod voluptates alias nobis excepturi perspiciatis natus voluptatem exercitationem voluptas quibusdam deserunt impedit libero rerum adipisci, quos nisi velit sunt! Quibusdam magni laborum perspiciatis, eaque quos nobis?</p>
+                       <h4>-John Doe<br>
+				<span class="found">Founder,Arrow</span>
+			 </h4>
+		             </div>
+
+
+		
+	</div>
+</div>
+
+ <div class="product">
+	  <div class="talk" id="lets">Let's talk about your product</div>
+	  <a href="https://chat.whatsapp.com/CQzFtPIGL78BLj11RNd3ZW"> <button class="touch" id="touchbtn" onclick="Touch();">Get in touch now</button> </a>
+</div>
+<footer>
+	<div class="ftname"><h1><span class="ud">UDAY</span><br>
+		 <span class="ara"> ARAVIND</span></h1>
+		<div class="lineft"></div></div>
+	<div class="fticons">
+		<div class="glow"><a href=""><i class="fa-brands fa-twitter fa-xl"  ></i></a></div>
+		<div class="glow"><i class="fa-brands fa-dribbble fa-xl"></i></div>
+		<div class="glow"><i class="fa-brands fa-behance fa-xl"></i> </div>
+		<div class="glow"> <i class="fa-brands fa-github fa-xl"></i></div>
+	</div>
+	<div class="design"><span>Designed by @D.U.A | Developed by</span> Inspanner </div>
+	<div class="copy"> <p>Copyright &copy; 2023 Uday Aravind. All Rights Reserved</p></div>
+
+	<div class="Switch"> <label>Switch Appearance</label><br>
+		<label>Dark</label>
+		<input type="radio" id="Dark" name="change"> 
+		<label>Light</label>
+		<input type="radio" id="Light" name="change">
+	</div>
+	
+</footer>
+
+
+<script type="text/javascript" src="maria.js">
+
+
+
+	
+</script>
+
+
+</body>
+</html>
