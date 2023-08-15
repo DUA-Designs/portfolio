@@ -1,8 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>My Portfolio</title>
-	<link rel="icon" type="image/jpg" href="favicon-black.png">
+<link rel="icon" type="image/jpg" href="favicon-black.png">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
@@ -12,25 +8,33 @@
 			scroll-behavior: smooth;
 		}
 
-		body{
-			background:radial-gradient(circle,#ff2a75 25%,rgba(73,22,94,1)75%);
-			background-size: cover;
+		body{  background-color:rgba(73,22,94,1);
+
+			background-size:cover;
 			background-repeat: no-repeat;
 			background-attachment: fixed;
 
 
 			 
 		}
-		 
+		 .logo{ width: 20%;
+			 
+			margin: 0 auto;
+
+			 	}
+		.logo img{display: block;
+			 margin: 0 auto;
+		}
 
 
 		nav{
 			 
 			 
 			display: flex;
+
 			 
 			justify-content: space-between;
-			padding: 2% 5%;
+			padding:  0 5%;
 
 
 
@@ -39,7 +43,7 @@
 		nav .myname{
 
 			width: 17%;
-			padding: 1%;
+			padding: 5px;
 			text-align: center;
 			 
 			font-family: 'Oswald', sans-serif;
@@ -47,12 +51,11 @@
 			font-size: 30px;
 			margin-left: 7%;
 		}
-		
-		nav .myname .sepe{
-			color: #9D00FF;
-		}
 		nav .myname .desi{
-			color:cyan;
+			color: cyan;
+		}
+		nav .myname .sepe{
+			color: #ff2a75;
 		}
 		nav .myname:hover{
 			box-shadow: 0 0 5px 3px orange;
@@ -91,6 +94,11 @@
 			margin-right: -2%; 	 
 			float: right;
 		}
+		.main .order{
+			display: flex;
+			background-color: yellow;
+
+		}
 		.main .name { 
 			margin-top: 4%;
 			 
@@ -106,15 +114,17 @@
 		}
 		.main .name h1{
 			font-size: 60px;
+			letter-spacing: -3px;
 			color: white;
             font-weight: 600;
-            margin-top: -4%;
+            margin-top: -3%;
+            
 		}
 		 
 		.main .name h3{
 			font-size: 20px;
 			color: white;
-			margin-top: -4%;
+			margin-top: -3%;
 		}
 		.main .name button{
 			width: 200px;
@@ -125,7 +135,8 @@
 			padding: 1% 1%;
 			 background:transparent;
 			border-radius: 30px;
-			margin-top: -5%;
+			margin-top: -2%;
+			margin-bottom: 1%;
 
 		}
 		.main .name button:hover{
@@ -403,6 +414,7 @@
           padding: 5% 2%;
           font-family: 'Montserrat',sans-serif;
           margin-top: -1.8%;
+          transition: 0.8s ease;
        
 
 		}
@@ -568,7 +580,7 @@
 		 	border-top: 1px solid white;
 		 }
 		 .skills .skill1{
-			box-shadow:inset 0 0 5px 3px  #ada7af;
+		 	box-shadow:inset 0 0 5px 3px  #ada7af;
 		 
 		 	border-radius: 5%;
 		 	width: 110px;
@@ -627,7 +639,8 @@
                  	border: 2px solid #FEF8DD;
 
           }
-		.skills  .skill1:nth-child(1):hover{
+
+          .skills  .skill1:nth-child(1):hover{
 	           	transform: scale(1.1);
 	           	transition: 0.8s ease-in-out;
 
@@ -649,80 +662,95 @@
           }
 
 
-
-
           .Switch{
+          	width: 120px;
+          	height: 80px;
           	float: right;
-          	margin-top: -3%;
+
+          	margin-top: -5%;
           	   font-family: 'Montserrat',sans-serif;
+
           }
 
           .Switch label{
+          	 font-family: 'Montserrat',sans-serif;
           	color: white;
           	font-size: 12px;
+
+          }
+
+          .Switch .options{
+          	display: none;
+           
+          }
+
+          .Switch:hover .options{
+          	display: block;
+          	transition: 0.8s ease;
+          }
+
+          .GIT{
+          	 background:radial-gradient(circle,rgba(73,22,94,1)25%,rgba(0,0,0,1)100%);
+			 
+			
+          text-align: center;
+          padding: 3% 2%;
+          font-family: 'Montserrat',sans-serif;
+          display: none;
+          transition: 0.8s ease;
+
           }
 
 
-		nav{
-			 
-			 
-			display: flex;
-			 
-			justify-content: space-between;
-			padding: 2% 5%;
+          .GIT .data{
+          	text-align: center;
+          	width: 350px;
+          	height: 40px;
+          	margin: 3px 0;
+          	border-radius: 30px;
+
+          	 
+          	 
+
+
+          }
+
+          .GIT h3{
+          	color: white;
+          	font-size: 40px;
+          	  margin: 0 0;
+          	  font-weight: 200;
+          }
+          .GIT #sub{
+          	margin: 10px;
+          	padding: 5px;
+          	width: 150px;
+          	height: 35px;
+          	font-size: 18px;
+          	border-radius: 10px;
+          	background: transparent;
+          	border: 1px solid #37a7ff;
+          	color: white;
+          }
+
+          .GIT #sub:hover{
+          	transform: translateY(-2px);
+			transition: 0.2s ease-in-out;
+			cursor: pointer;
+			box-shadow:inset 0 0 10px 10px  #37a7ff,inset 0 0 80px 10px #37a7ff,inset 0 0 100px 10px #37a7ff,inset 0 0 70px 10px  #37a7ff;
+
+          }
 
 
 
-		}
-		 
-		nav .myname{
-
-			width: 17%;
-			padding: 1%;
-			text-align: center;
-			 
-			font-family: 'Oswald', sans-serif;
-			color: cyan;
-			font-size: 30px;
-			margin-left: 7%;
-		}
-		nav .myname .desi{
-			color: purple;
-		}
-		nav .myname .sepe{
-			color: #9D00FF;
-		}
-		nav .myname:hover{
-			box-shadow: 0 0 5px 3px orange;
-		}
-		nav .details{ margin-right: 8%;
-			width: 46%;
-			display: flex;
-			align-items: center;
-			justify-content: space-between;
-			 
-		}
-		nav .details a{
-			font-family: 'Roboto', sans-serif;
-			text-decoration: none;
-			font-size: 20px;
-			color: cyan;
-			 
-			 
-			background: transparent;
-			 
-			padding: 1% 1%;
-		}
-		nav .details a:hover{
-			
-			color: orange;
-			border-bottom: 1px solid orange;
-
-			 
-			transition: 0.2s ease;
 
 
-		}
+
+
+
+
+
+          @media {}
 
           
 
@@ -737,8 +765,7 @@
 
 	</style>
 </head>
-<body>
-	<nav>
+<body id="bdy"><nav>
 		<div class="myname">D.U.A <span class="sepe">|</span><span class="desi"> DESIGNS</span></div>
 		 
 		<div class="details"> 
@@ -750,6 +777,8 @@
 	</nav>
 
 	
+
+	  
 		 
 
 	<div class="main">
@@ -788,6 +817,7 @@
 			<h4>Application</h4></div>
 		
 	</div>
+
 	<br>
 <div class="back2">
 	<div class="exp">
@@ -853,9 +883,17 @@
 	</div>
 </div>
 
- <div class="product">
+ <div class="product" id="prod">
 	  <div class="talk" id="lets">Let's talk about your product</div>
-	  <a href="https://chat.whatsapp.com/CQzFtPIGL78BLj11RNd3ZW"> <button class="touch" id="touchbtn" onclick="Touch();">Get in touch now</button> </a>
+	   <button class="touch" id="touchbtn" onclick="Touch();">Get in touch now</button> 
+</div>
+<div class="GIT" id="git">
+	<form method="post" onsubmit="check();">
+		<h3>Please give us your contact information</h3><br>
+		 <input type="text" name="" required="" placeholder="Name" class="data"><br>
+		 <input type="text" name="" placeholder="Email Id" id="email" class="data" required=""><br>
+		 <input type="submit" name="" id="sub">
+	</form>
 </div>
 <footer>
 	<div class="ftname"><h1><span class="ud">UDAY</span><br>
@@ -871,16 +909,81 @@
 	<div class="copy"> <p>Copyright &copy; 2023 Uday Aravind. All Rights Reserved</p></div>
 
 	<div class="Switch"> <label>Switch Appearance</label><br>
-		<label>Dark</label>
-		<input type="radio" id="Dark" name="change"> 
+		<div class="options" onclick="app();">
+		<label >Dark</label>
+		<input type="radio" id="Dark" name="change" > 
 		<label>Light</label>
 		<input type="radio" id="Light" name="change">
+	</div>
 	</div>
 	
 </footer>
 
 
-<script type="text/javascript" src="maria.js">
+<script type="text/javascript">
+	
+
+
+
+	function app(){
+		const dark= document.getElementById("bdy");
+	const light=document.getElementById("bdy");
+
+
+
+	 
+
+	let x=document.getElementById('Dark').checked;
+	
+	let y=document.getElementById('Light').checked;
+
+	 
+		
+	 
+	if(x==true){
+	  	
+	  dark.style.backgroundColor="#37324b";
+	}
+
+	console.log(x);
+
+	
+	if(y==true){
+		
+		light.style.backgroundColor="#37a7ff";
+	}
+	console.log(y);  
+}
+
+
+
+function check(){
+	let yourem= document.getElementById("email").value;
+	console.log(yourem);
+	let z=yourem.indexOf("@");
+	let d=yourem.lastIndexOf(".");
+	let l=yourem.length;
+	console.log(z,d,l);
+	if((z<1)||(d<z+2)||(d+2>=l)){
+		alert("Please enter a valid Email Id");
+		return false;
+	}
+
+}
+
+
+function Touch(){
+	const prod= document.getElementById("prod");
+	const git=document.getElementById("git");
+	prod.style.display="none";
+	git.style.display="block";
+
+  
+
+}
+
+
+
 
 
 
