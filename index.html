@@ -874,10 +874,57 @@
             }
 
 
+
             #certi img{display: block;
             	margin: 0 auto;
+            	width:100%;
+            	height: 90%;
 
             }
+
+            #certinames{
+            	text-align: center;
+            	background-color: white;
+            	width: 90%;
+            	margin: 0 auto;
+            	 
+            	 
+            	color: #37a7ff;
+            	font-family: 'Montserrat',sans-serif;
+
+            }
+            #certinames h1{
+            	padding: 20px;
+            	font-size: 40px;
+            	font-weight: 600;
+            }
+
+            #certinames i{
+            	font-size: 6rem;
+            	position: absolute;
+            	cursor: pointer;
+            	color: white;
+            	 
+
+
+
+            }
+            #certinames #chevron-left{
+            	left:10px;
+            	top: 330%;
+            	 
+            }
+            #certinames #chevron-right{
+            	right:10px;
+            	top: 330%;
+            	 
+            }
+
+             #certi #testdome{
+            	display: none;
+            }
+
+             
 
 
 
@@ -1078,7 +1125,7 @@
 
 
 			<div class="icn">
-				 <a href="#certi">My Certifications |  <i class="fa-solid fa-certificate fa-xl"></i></a> 
+				 <a href="#certinames">My Certifications |  <i class="fa-solid fa-certificate fa-xl"></i></a> 
 			</div>
 			</div>
 
@@ -1167,7 +1214,13 @@
 		
 	</div>
 </div>
-<div id="certi"><img src="certi.png"></div>
+<div id="certinames"><h1>My Certifications</h1>
+<div id="certi"><img src="certi.png" id="freeCodeCamp">
+<img src="testdome.png" id="testdome"></div>
+
+<i class="fa-solid fa-chevron-left" id="chevron-left" ></i>
+<i class="fa-solid fa-chevron-right" id="chevron-right"  onclick="move();"></i>
+</div>
 <br>
 <br>
 
@@ -1223,6 +1276,23 @@
 		opts.addEventListener("click",() =>{
 			hamburger.classList.remove("show");
 		})
+
+
+		const scrollLeft=document.getElementById("chevron-left");
+		const scrollRight=document.getElementById("chevron-right");
+
+		scrollLeft.addEventListener("click",()=>{scrollLeft.classList.toggle("moveleft")});
+		scrollRight.addEventListener("click",()=>{scrollRight.classList.toggle("moveright")});
+
+		function move(){
+			const freeCodeCamp=document.getElementById("freeCodeCamp");
+			const testdome=document.getElementById("testdome");
+			freeCodeCamp.style.display="none";
+			testdome.style.display="block";
+
+
+onclick="move();"		}
+
 
 
 
