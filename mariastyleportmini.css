@@ -1,0 +1,1076 @@
+
+*{
+			margin:0px;
+			padding: 0px;
+		}
+
+
+		html{
+			scroll-behavior: smooth;
+		}
+
+		body{  background-color:rgba(73,22,94,1);
+
+			background-size:cover;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+
+
+			 
+		}
+		  
+
+
+		nav{position: fixed;
+
+			 
+			 
+			display: flex;
+			background-color: #be3144;
+
+
+			 
+			justify-content: space-between;
+			padding:  0 5%;
+			width: 100%;
+			height: 8vh;
+			margin:-1% 0 0 -1%;
+			z-index: 1;
+
+
+
+		}
+		 
+		nav .myname{
+
+
+			width: 17%; 
+			 
+			text-align: center;
+			 
+			font-family: 'Oswald', sans-serif;
+			color: white;
+			font-size: 25px;
+			margin-top: 1.5%;
+
+			 
+		}
+		nav .myname .desi{
+			color: white;
+		}
+		nav .myname .sepe{
+			color: #ff2a75;
+		}
+		 
+		nav .details{ margin-right: 8%;
+			width: 40%;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			margin-top: 0.7%;
+			font-weight: 600;
+			opacity: 0.9;
+
+			 
+		}
+		nav .details #details-hover a{
+
+			font-family: 'Roboto', sans-serif;
+			text-decoration: none;
+			font-size: 20px;
+			color: white;
+			 
+			 
+			
+			 
+			padding: 5% 1% 1% 1%;
+			 display: block;
+			margin-top: 10px;
+
+		}
+		nav .details  #details-hover{
+			width: 100%;
+			height: 100%;
+			text-align: center;
+
+			 
+
+		}
+		nav .details  #details-hover:hover{
+			background-color: black;
+			
+			 
+
+			 
+
+			 
+			transition: 0.2s ease;
+
+
+		}
+		.main{
+
+			width: 50%;
+			margin:0 auto; 	
+			margin-top:100px;
+
+			 
+			display: flex;
+			justify-content: space-around;
+			 
+			align-items: center;
+			 
+		}
+		.main .order{
+			display: flex;
+			background-color: yellow;
+
+		}
+		.main .name { 
+			margin-top: 2%;
+			display: grid;
+			 
+			padding: 2% 0;
+			font-family: 'Roboto', sans-serif;
+		}
+		.main .name p{
+			font-size: 25px;
+			color: white;
+		 
+
+
+
+		}
+		.main .name h1{
+			font-size: 50px;
+			letter-spacing: -3px;
+			color: white;
+            font-weight: 600;
+            margin-top: -2%;
+            margin-bottom: 2%;
+            
+		}
+		 
+		.main .name h3{
+			font-size: 20px;
+			color: white;
+			font-weight: 400;
+			 
+		}
+		.main .name button{
+			width: 200px;
+			height: 50px;
+			border: 2px solid white;
+			color: white;
+			font-size: 25px;
+			padding: 1% 1%;
+			 background:transparent;
+			border-radius: 30px;
+			margin-top: -2%;
+			margin-bottom: 1%;
+
+		}
+		.main .name button:hover{
+			
+			border:2px solid
+			cyan;
+
+			color: black;
+			transition: 0.5s ease;
+			cursor: pointer;
+			transform: translateY(-5px);
+			box-shadow:inset 0 0 10px 10px  cyan,inset 0 0 80px 10px cyan,inset 0 0 100px 10px cyan,inset 0 0 70px 10px  cyan;
+
+		}
+		.name .icn{
+			color: white;
+			font-size: 25px;
+			font-family: 'Roboto', sans-serif;
+		}
+		.name .icn a{
+			text-decoration: none;
+			color: white;
+
+		}
+		 
+         
+         .back2{
+         	width: 100%;
+         	
+         		background-color:#aeafb3;
+         		 
+         	 
+         	 
+         	padding-bottom: 5%;
+         	color: white;
+
+         }
+		.exp{
+			margin-top: 10%;
+			 
+			margin-left: 10%;
+		}
+		.exp p{letter-spacing: 2px;
+			padding-top: 2%;
+			font-family: 'Montserrat',sans-serif;
+
+		}
+		.exp h1{letter-spacing: 2px;
+			font-size: 45px;
+			font-weight: 520;
+			font-family: 'Montserrat',sans-serif;
+		}
+		.exp .sp1 .work{
+			color: #9949cc;
+
+		}
+		 
+		.exp  .sp1 .line2 {
+			 width: 2%;
+			 height: 2px;
+			background-color:#9949cc; 
+			margin-top: 1%;
+			 
+
+		}
+		.exp  .sp1:hover .line2 {
+			width: 13%;
+			transition: 0.5s ease;
+		}
+
+		.container{
+			width: 100%;
+		 margin:20px auto;
+
+			 
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+		}
+		.container .box{
+			width:50%;
+			background-color: #9949cc;
+;
+			height: 400px;
+			margin: 2% 3%;
+			box-shadow: 0 0 3px 1px black;
+			 
+
+
+			 
+
+
+		}
+		.container .box:hover{
+			cursor: pointer;
+		}
+		.container .box #caption{
+			 
+			background-color: #303841;
+			color: white;
+			text-align: center;
+			padding: 5px;
+			font-family: 'Poppins', sans-serif;
+			font-size: 20px;
+			 
+		}
+		.container .box #caption span{
+			visibility: hidden;
+			color: red;
+			font-size: 25px;
+		}
+		.container .box:nth-child(1):hover #caption #hovv:nth-child(1) {
+			visibility: visible;
+			transition: 0.3s ease;
+		}
+		.container .box:nth-child(1):hover #caption #hovv:nth-child(2) {
+			visibility: visible;
+			transition: 0.3s ease;
+		}
+	
+
+		.dp{
+			border-radius: 10%;
+			 
+			 
+
+		}
+		.dp:hover{
+			box-shadow: 0 0 7px 4px cyan;
+			transition: 0.3s ease-in-out;
+
+		}
+
+		.back3{
+			background-color:#aeafb3;
+			padding-bottom:0 5%;
+			 
+		}
+
+		.container3{
+			width: 100%;
+			margin: 2% 0;
+
+			 
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+		}
+
+		.container3 .box{
+			width:45%;
+			font-family: 'Montserrat',sans-serif;
+			
+			height: 400px;
+			margin: 2% 1%;
+			padding: 1% 2%;
+
+		}
+		.container3 #box1 {
+			background-color: #7b32d5;
+			color: white;
+			 
+		}
+		.container3 #box2{
+			background-color: #ff2a75;
+			color: white;
+		}
+		.container3 #box3{
+			color: white;
+			background-color: #37a7ff;
+		}
+		.container3 #box1  h1{
+			font-size: 42px;
+			font-weight: 400;
+		} 
+		.container3   #box1  h4{
+			font-size: 25px;
+			font-weight: 400;
+			text-align: right;
+
+		} 
+		.container3 #box1  h4 .found{
+			font-size: 20px;
+		}
+		.container3 #box1  p{
+			font-size: 17px;
+			font-weight: 400;
+		}
+
+
+		.container3 #box2  h1{
+			font-size: 42px;
+			font-weight: 400;
+		} 
+		.container3   #box2  h4{
+			font-size: 25px;
+			font-weight: 400;
+			text-align: right;
+
+		} 
+		.container3 #box2  h4 .found{
+			font-size: 20px;
+		}
+		.container3 #box2  p{
+			font-size: 17px;
+			font-weight: 400;
+		}
+
+
+
+
+        .container3 #box3  h1{
+			font-size: 42px;
+			font-weight: 400;
+		} 
+		.container3   #box3  h4{
+			font-size: 25px;
+			font-weight: 400;
+			text-align: right;
+
+		} 
+		.container3 #box3  h4 .found{
+			font-size: 20px;
+		}
+		.container3 #box3  p{
+			font-size: 17px;
+			font-weight: 400;
+		}
+
+
+
+
+
+
+
+
+
+		.container3 .box:hover{
+			box-shadow: 0 0 5px 3px cyan;
+		     transform: scale(1.1);
+		     transition: 0.3s ease;
+		}
+		.exp2{
+			font-family: 'Montserrat',sans-serif;
+		
+		      margin: 0 5%;
+		      color: white;
+
+			 
+			 
+		}
+		.exp2 p{
+			padding-top: 2%;
+			letter-spacing: 3px;
+			 
+
+		}
+		.exp2 h1{
+			font-size: 45px;
+			font-weight: 520;
+			letter-spacing: 2px;
+
+			 
+		}
+		.exp2 .sp2 .work{
+			color: #ff2a75;
+
+		}
+		
+
+		.exp2  .sp2 .line3{
+			 width: 2%;
+			 height: 4px;
+			background-color:#ff2a75; 
+			 
+
+		}
+		.exp2  .sp2:hover .line3 {
+			width: 25%;
+			transition: 0.8s ease;
+		}
+
+		.product{
+			  background:radial-gradient(circle,rgba(73,22,94,1)25%,rgba(0,0,0,1)100%);
+			 
+			
+          text-align: center;
+          padding: 5% 2%;
+          font-family: 'Montserrat',sans-serif;
+          margin-top: -1.8%;
+          transition: 0.8s ease;
+       
+
+		}
+
+		.product .talk{
+			
+			font-size: 55px;
+			height: 90px;
+			color: white;
+			font-weight: 200;
+
+
+		}
+
+		.product button{
+
+			width: 25%;
+			height:60px;
+			border-radius: 40px;
+			background:transparent;
+			border: 2px solid #37a7ff;
+			color: white;
+			font-size: 20px;
+			 
+
+			 
+
+			
+		}
+		.product button:hover{
+			 
+			transform: translateY(-6px);
+			transition: 0.2s ease-in-out;
+			cursor: pointer;
+			box-shadow:inset 0 0 10px 10px  #37a7ff,inset 0 0 80px 10px #37a7ff,inset 0 0 100px 10px #37a7ff,inset 0 0 70px 10px  #37a7ff;
+
+		}
+		footer{
+			background-color:  #37324b;
+			margin-top: -2.5%;
+			width: 100%;
+					}
+
+		.ftname{
+			text-align: center;
+			font-size: 25px;
+			color: white;   font-family: 'Montserrat',sans-serif;
+			padding: 3% 0%;
+
+		}
+		.ftname .ud{
+			 
+			font-weight: 600;
+			color: #37a7ff;
+		}
+		.ftname .ara{
+			font-weight: 200;
+		}
+
+		       .fticons{
+		       	width: 30%;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		 
+			transform: translateX(120%);
+			padding-bottom: 5%;
+
+			 
+		}
+		.fticons i{
+			color: white;
+			font-size: 3em;
+		}
+		.design{
+			border-top: 2px solid #37a7ff;
+
+			text-align: center;
+			font-size: 20px;
+			 font-family: 'Montserrat',sans-serif;
+			 padding: 4% 0;
+			 background-color: #322e45;
+			 color: white;
+
+		}
+		.design span{
+			opacity: 0.75;
+		}
+
+		.glow{ 
+			opacity: 0.75;
+
+			 
+
+
+			  
+		}
+
+		.glow:hover{
+			  
+			cursor: pointer;
+			opacity: 1;
+			transition: 0.2s ease-in-out;
+			 
+			 
+		}
+
+
+		.ftname .lineft{
+			width: 7%;
+			height: 4px;
+			background-color:#37a7ff;
+			margin:0 auto;
+		 
+
+		}
+
+		.exp2 h1 .linehp{
+			width: 1%;
+			height: 2px;
+			background-color: #ff2a75;
+			margin: 1.5% 0%;
+
+		}
+		.exp2 h1:hover .linehp{
+			width: 13%;
+			 
+			transition: 0.8s   ease;
+		}
+
+
+
+		.copy{
+		 	 
+		 	 
+		 	text-align: center;
+		 	font-size: 20px;
+		 	 padding: 1%;
+		 	font-family: 'Montserrat',sans-serif;
+		 	background-color: #322e45;
+		 	color: white;
+		 	margin-top: -4%;
+
+		 }
+
+
+		 .know{
+		 	text-decoration: none;
+		 }
+
+
+
+		 .skills{
+		 	display: flex;
+		 	justify-content: space-between;
+		 	align-items: center;
+		 	flex-wrap: wrap;
+		 	padding: 3% 1%;
+		 	width: 50%;
+
+		 	 
+		 	height: 20vh;
+		margin:0 auto;
+		 	
+		 	
+		 	border-top: 1px solid white;
+		 }
+		 .skills .skill1{
+		 	box-shadow:inset 0 0 5px 3px  #ada7af;
+		 
+		 	border-radius: 5%;
+		 	width: 110px;
+		 	height: 14vh;
+		 	cursor: pointer;
+		 	 
+		 	text-align: center;
+		 	display: grid;
+		    align-items: center;
+		    padding: 2%;
+
+
+
+		   
+
+
+
+		 }
+		  .skills  i{
+		  	font-size: 2em;
+		  	
+		  }
+
+		  .skills  .skill1:nth-child(1) i{
+		  	color: lightgreen;
+		  }
+		  .skills  .skill1:nth-child(2) i{
+		  	color: #FEC04F;
+		  }
+		  .skills  .skill1:nth-child(3) i{
+		  	color:  #ACDDDE;
+		  }
+		  .skills  .skill1:nth-child(4) i{
+		  	color: #FEF8DD;
+		  }
+
+
+		  .skills .skill1 h4{
+		  	font-weight: 400;
+		  	color: white;
+		  	 font-family: 'Roboto', sans-serif;
+		  }
+
+
+	      .skills  .skill1:nth-child(1){
+	           	border: 2px solid  lightgreen;
+          }
+          .skills  .skill1:nth-child(2){
+ 	          border: 2px solid #FEC04F;
+
+          }
+           .skills  .skill1:nth-child(3){
+            	border: 2px solid #ACDDDE;
+          }
+           .skills  .skill1:nth-child(4){
+                 	border: 2px solid #FEF8DD;
+
+          }
+
+          .skills  .skill1:nth-child(1):hover{
+	           	transform: scale(1.1);
+	           	transition: 0.8s ease-in-out;
+
+          }
+          .skills  .skill1:nth-child(2):hover{
+	           	transform: scale(1.1);
+	           	transition: 0.8s ease-in-out;
+	            
+          }
+          .skills  .skill1:nth-child(3):hover{
+	           	transform: scale(1.1);
+	           	transition: 0.8s ease-in-out;
+	            
+          }
+          .skills  .skill1:nth-child(4):hover{
+	           	transform: scale(1.1);
+	           	transition: 0.8s ease-in-out;
+	            
+          }
+
+
+          .Switch{
+          	width: 120px;
+          	height: 80px;
+          	float: right;
+
+          	margin-top: -5%;
+          	   font-family: 'Montserrat',sans-serif;
+
+          }
+
+          .Switch label{
+          	 font-family: 'Montserrat',sans-serif;
+          	color: white;
+          	font-size: 12px;
+
+          }
+
+          .Switch .options{
+          	display: none;
+           
+          }
+
+          .Switch:hover .options{
+          	display: block;
+          	transition: 0.8s ease;
+          }
+
+          .GIT{
+          	 background:radial-gradient(circle,rgba(73,22,94,1)25%,rgba(0,0,0,1)100%);
+			 
+			
+          text-align: center;
+          padding: 3% 2%;
+          font-family: 'Montserrat',sans-serif;
+          display: none;
+           
+
+          }
+
+
+          .GIT .data{
+          	text-align: center;
+          	width: 350px;
+          	height: 40px;
+          	margin: 3px 0;
+          	border-radius: 30px;
+
+          	 
+          	 
+
+
+          }
+
+          .GIT h3{
+          	color: white;
+          	font-size: 40px;
+          	  margin: 0 0;
+          	  font-weight: 200;
+          }
+          .GIT #sub{
+          	margin: 10px;
+          	padding: 5px;
+          	width: 150px;
+          	height: 35px;
+          	font-size: 18px;
+          	border-radius: 10px;
+          	background: transparent;
+          	border: 1px solid #37a7ff;
+          	color: white;
+          }
+
+          .GIT #sub:hover{
+          	transform: translateY(-2px);
+			transition: 0.2s ease-in-out;
+			cursor: pointer;
+			box-shadow:inset 0 0 10px 10px  #37a7ff,inset 0 0 80px 10px #37a7ff,inset 0 0 100px 10px #37a7ff,inset 0 0 70px 10px  #37a7ff;
+
+          }
+          .navalt{
+           
+          	width: 50%;
+       
+          	margin-left: 20px;
+          	transition: 0.3s;
+
+          	 
+          
+          	 
+          	 
+          	 
+          	 
+          }
+
+          .navalt .ham{
+           
+          	margin-bottom: 5px;
+          	 
+          	cursor: pointer;
+          	 
+          	height: 50px;
+          	display: none;
+          	padding: 5px;
+          	width: 100px;
+          	 
+
+
+          	 
+          	 
+          }
+
+
+          .navalt .ham>div {
+          	background-color: white;
+          	width: 30px;
+          	height: 2px;
+          	margin:10px 0;
+
+          }
+          .navalt .options{
+          	 
+          	margin: 0 40px;
+          	display: none;
+
+
+          	 
+
+          	 
+
+
+          	 
+          }
+
+          .navalt .options ul{
+          	list-style: none;
+          	 
+
+
+
+          }
+
+          .navalt .options ul li{
+          	cursor: pointer;
+          	
+          	color: white;
+          padding: 10px;
+           font-family: 'Montserrat',sans-serif;
+
+          }
+
+           .navalt .options ul li a{
+           	text-decoration: none;
+           	color: white;
+           
+        
+           }
+
+           #confirm{
+           	 background:radial-gradient(circle,rgba(73,22,94,1)25%,rgba(0,0,0,1)100%);
+			 
+			
+          text-align: center;
+          padding: 3% 2%;
+          font-family: 'Montserrat',sans-serif;
+          display: none;
+          
+
+           }
+            #confirm h1{
+            	font-weight: 200;
+            	color: #37a7ff;
+            }
+            #confirm i{
+            	font-size: 65px;
+            	color:#37a7ff;
+            }
+
+
+
+            #certi img{display: block;
+            	margin: 0 auto;
+            	width:100%;
+            	height: 90%;
+
+            }
+
+            #certinames{
+            	text-align: center;
+            	background:transparent;
+            	width: 90%;
+            	margin: 0 auto;
+            	 
+            	 
+            	color: white;
+            	font-family: 'Montserrat',sans-serif;
+
+            }
+            #certinames h1{
+            	padding: 20px;
+            	font-size: 40px;
+            	font-weight: 600;
+            }
+
+            #certinames i{
+            	font-size: 6rem;
+            	position: absolute;
+            	cursor: pointer;
+            	color: white;
+            	 
+
+
+
+            }
+            #certinames #chevron-left{
+            	left:10px;
+            	top: 330%;
+            	 
+            }
+            #certinames #chevron-right{
+            	right:10px;
+            	top: 330%;
+            	 
+            }
+
+             #certi #testdome{
+            	display: none;
+            }
+
+             
+
+
+
+
+
+
+
+
+
+
+
+
+          @media only  screen and (max-width: 500px) {
+          	*{
+          		margin: 0;
+          		padding: 0;
+          	}
+          	nav{
+          		display: none;
+          	}
+
+          	.container3{
+          		display: grid;
+
+          		 justify-content: center;
+          		align-items: center;
+          	}
+          	.container3 .box{
+          		width: 350px;
+
+          	}
+          	.container3 .box h1,p,h4{
+          		 
+          		padding: 10px;
+          	}
+          	.container{
+          		display: grid;
+          		align-items: center;
+
+          	}
+          	.container .box{
+          		width:  350px;
+          		text-align: start;
+          	}
+
+          	.navalt .ham{
+          		display: block;          	}
+
+           
+
+            .navalt.show .ham  #first{
+          		transform: rotate(45deg)translateY(17px); 
+          		transition: 0.3s ease;
+
+          	}
+          	.navalt.show .ham  #second{
+          		visibility: hidden;
+          	}
+          	.navalt.show .ham #third{
+          		transform: rotate(-45deg)translateY(-17px);
+          		transition: 0.3s ease;
+          	}
+
+          	.navalt.show .options{
+          		display: block;
+          		transition: 0.3s ease;
+ 
+          	}
+
+          	.skills .skill1{
+          		width: 60px;
+          		height: 7vh;
+          	}
+
+          	.dp{
+          		width: 120px;
+          		height: 120px;
+          	}
+          	.skills  i{
+		  	font-size: 1em;
+		  	
+		  }
+		  .skills .skill1 h4{
+		  	font-size: 8px;
+		  }
+
+		  .main .name p{
+			font-size: 10px;
+			color: white;
+			margin-top: -20px;
+
+
+
+		}
+
+		.main .name h1{
+			font-size: 20px;
+			letter-spacing: -2px;
+			color: white;
+            font-weight: 500;
+            margin-top: -3%;
+            
+		}
+		 
+		.main .name h3{
+			font-size: 10px;
+			color: white;
+			margin-top: -3%;
+		}
+		.main .name button{
+			width: 70px;
+			height: 15px;
+			border: 1px solid white;
+			color: white;
+			font-size: 10px;
+			padding: 1% 1%;
+			 
+
+		}
+
+		.name .icn{
+			color: white;
+			font-size: 9px;
+			font-family: 'Roboto', sans-serif;
+		}
+		 
+		.name .icn a img{
+			border-radius: 10px;
+		}
+
+
+
+          }
+
+          #certi #fccscript{
+          	display: none;
+          }
