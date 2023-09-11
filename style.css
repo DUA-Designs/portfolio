@@ -287,6 +287,10 @@
 			visibility: visible;
 			transition: 0.3s ease;
 		}
+		.container .box a{
+			text-decoration: none;
+			color: white;
+		}
 	
 
 		.dp{
