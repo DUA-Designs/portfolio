@@ -9,7 +9,7 @@
 			scroll-behavior: smooth;
 		}
 
-		body{  background-color:#45567d;
+		body{  background-color:#37324b;
 
 			background-size:cover;
 			background-repeat: no-repeat;
@@ -115,6 +115,7 @@
 			margin:0 auto; 	
 			margin-top:100px;
 
+
 			 
 			display: flex;
 			justify-content: space-around;
@@ -129,8 +130,12 @@
 		}
 		.main .name { 
 			width: 380px;
+		 
+			 
+			 
 			margin-top: 2%;
 			display: grid;
+		 
 			 
 			padding: 2% 0;
 			font-family: 'Roboto', sans-serif;
@@ -154,12 +159,6 @@
 		}
 		 
 		.main .name h3{
-			font-size: 20px;
-			color: white;
-			font-weight: 400;
-			 
-		}
-               .main .name h3{
 			font-size: 22px;
 			color: white;
 			font-weight: 400;
@@ -252,7 +251,7 @@
          .back2{
          	width: 100%;
          	
-         		background-color:#aeafb3;
+         		background-color: #45567d;
          		 
          	 
          	 
@@ -261,9 +260,8 @@
 
          }
 		.exp{
-			margin-top: 10%;
-			 
-			margin-left: 10%;
+		 
+			margin: 10% 0 5% 5%;
 		}
 		.exp p{letter-spacing: 2px;
 			padding-top: 2%;
@@ -272,36 +270,39 @@
 		}
 		.exp h1{letter-spacing: 2px;
 			font-size: 45px;
-			font-weight: 520;
+			font-weight: 700;
 			font-family: 'Montserrat',sans-serif;
 		}
 		.exp .sp1 .work{
-			color: #9949cc;
+			color: #37a7ff;
 
 		}
 		 
 		.exp  .sp1 .line2 {
 			 width: 2%;
 			 height: 2px;
-			background-color:#9949cc; 
+			background-color:#37a7ff; 
 			margin-top: 1%;
 			 
 
 		}
 		.exp  .sp1:hover .line2 {
-			width: 13%;
+			width: 25%;
 			transition: 0.5s ease;
 		}
 
 		.container{
-			width: 100%;
+			width: 90%;
 		 margin:20px auto;
+		 
+
 	 
 
 			 
 			display: grid;
-			grid-template-columns: 400px 400px 400px;
-			grid-row-gap: 100px;
+			grid-template-columns: 360px 360px 360px;
+			grid-row-gap: 120px;
+			 
 			justify-content: space-around;
 			 
 
@@ -313,9 +314,10 @@
 		.container .box{
 			 background-color: yellow;
 			 display: grid;
+			 align-items: center;
 			 			 
 
-			height: 400px;
+			height: 380px;
 			 
 
 			 
@@ -333,6 +335,7 @@
 		.container .box #caption{
 			width: 100%;
 			margin-top: -10px;
+			height: 40px;
 			 
 			background-color: #303841;
 			color: white;
@@ -401,7 +404,7 @@
 		}
 
 		.back3{
-			background-color:#aeafb3;
+			background-color:#45567d;
 			padding-bottom:0 5%;
 			 
 		}
@@ -512,7 +515,7 @@
 		.exp2{
 			font-family: 'Montserrat',sans-serif;
 		
-		      margin: 0 5%;
+		      margin: 0 3%;
 		      color: white;
 
 			 
@@ -526,25 +529,25 @@
 		}
 		.exp2 h1{
 			font-size: 45px;
-			font-weight: 520;
+			font-weight: 700;
 			letter-spacing: 2px;
 
 			 
 		}
 		.exp2 .sp2 .work{
-			color: #ff2a75;
+			color: #37a7ff;
 
 		}
 		
 
-		.exp2  .sp2 .line3{
+		.exp2  .sp2 .linehp{
 			 width: 2%;
-			 height: 4px;
-			background-color:#ff2a75; 
+			 height: 2px;
+			background-color:#37a7ff; 
 			 
 
 		}
-		.exp2  .sp2:hover .line3 {
+		.exp2  .sp2:hover .linehp {
 			width: 25%;
 			transition: 0.8s ease;
 		}
@@ -634,16 +637,19 @@
 			 
 		}
 		.fticons i{
+			 
 			color: white;
 			font-size: 1.3em;
 			font-weight: 400;
 			text-align: center;
 		}
 		.fticons a{
+			font-size: 1.3rem;
 			text-decoration: none;
-			 
+		 
 			color: white;
 			text-align: center;
+
 		}
 		.design{
 			border-top: 2px solid #37a7ff;
@@ -659,6 +665,7 @@
 		.design span{
 			opacity: 0.75;
 		}
+
 
 		 
 
@@ -1031,12 +1038,14 @@
             }
             #certinames #chevron-left{
             	left:10px;
-            	top: 330%;
+            	top: 400%;
+            	
             	 
             }
             #certinames #chevron-right{
             	right:10px;
-            	top: 330%;
+            	top: 400%;
+            	
             	 
             }
 
