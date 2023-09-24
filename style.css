@@ -1087,20 +1087,28 @@
             }
             #certinames #chevron-left{
             	left:10px;
-            	top: 400%;
+            	top: 450%;
             	
             	 
             }
             #certinames #chevron-right{
             	right:10px;
-            	top: 400%;
+            	top: 450%;
             	
             	 
             }
 
-             #certi #testdome{
-            	display: none;
+             #certi img{
+
+                  width: 80vw;
+                  height: 80vh;
+                  display: none;
+               
+            	 
             }
+             #certi img:nth-child(1){
+             	display: block;
+             }
 
              
 
@@ -1237,6 +1245,4 @@
 
           }
 
-          #certi #fccscript{
-          	display: none;
-          }
+         
