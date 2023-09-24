@@ -203,11 +203,14 @@
 </div>
 <div id="certinames"><h1>My Certifications</h1>
 <div id="certi"><img src="./images/certi.png" id="freeCodeCamp" alt="Responsive-Web-Design-Certification">
-<img src="testdome.png" id="testdome" alt="testdome-Certificate">
-<img src="./images/javascript_certi.PNG" id="fccscript" alt="javascript-Algorithm-and-Data-Structures-Certification"></div>
+<img src="testdome.png" id="testdome" alt="testdome-Certification">
+<img src="./images/javascript_certi.PNG" id="fccscript" alt="javascript-Algorithm-and-Data-Structures-Certification">
+<img src=".images/fedl.PNG" alt="Front End Libraries Certification" id="fedl">
 
-<i class="fa-solid fa-chevron-left" id="chevron-left" onclick="left();"></i>
-<i class="fa-solid fa-chevron-right" id="chevron-right"  onclick="right();"></i>
+</div>
+
+<i class="fa-solid fa-chevron-left" id="chevron-left" onclick="left()"></i>
+<i class="fa-solid fa-chevron-right" id="chevron-right"  onclick="right()"></i>
 </div>
 <br>
 <br>
@@ -257,6 +260,9 @@
               
 	});
 
+	let certiRotations=0;
+	const  certi=["testdome","freeCodeCamp","fccscript","fedl"];
+
  
 		const hamburger= document.querySelector(".navalt");
 		const opts= document.querySelector("opts");
@@ -277,26 +283,36 @@
 		scrollRight.addEventListener("click",()=>{scrollRight.classList.toggle("moveright")});
 
 		function right(){
+		   if(certiRotations<3){
+		   	          certiRotations++;
+			for(let i=0;i<certi.length;i++){
+				if(i===certiRotations){
+					 document.getElementById(certi[i]).style.display="block";
+
+				}
+				else{
+					 document.getElementById(certi[i]).style.display="none";
+				}
+			}
+		   }
 		 
-
-			 const script=document.getElementById("fccscript");
-			const freeCodeCamp=document.getElementById("freeCodeCamp");
-			script.style.display="block";
-			freeCodeCamp.style.display="none";
-		 
-
-
-
-
 		}
+
 		function left(){
-			const script=document.getElementById("fccscript");
-			const freeCodeCamp=document.getElementById("freeCodeCamp");
-			script.style.display="none";
-			freeCodeCamp.style.display="block";
+		if(certiRotations>0){
+				certiRotations--;
+			 for(let i=0;i<certi.length;i++){
+				if(i===certiRotations){
+					 document.getElementById(certi[i]).style.display="block";
+				}
+				else{
+					 document.getElementById(certi[i]).style.display="none";
+				}
+			}
 		 
 
      }
+		}
 
 
 
