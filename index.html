@@ -258,12 +258,12 @@
 
 
 <script type="text/javascript">
-	$(document).ready(function(){
-              
-	});
 
 	let certiRotations=0;
 	const  certi=["testdome","freeCodeCamp","fccscript","fedl"];
+	console.log(certi[certiRotations]);
+
+
 
  
 		const hamburger= document.querySelector(".navalt");
@@ -284,7 +284,9 @@
 		scrollLeft.addEventListener("click",()=>{scrollLeft.classList.toggle("moveleft")});
 		scrollRight.addEventListener("click",()=>{scrollRight.classList.toggle("moveright")});
 
-		function right(){
+
+
+ 		function right(){
 		   if(certiRotations<3){
 		   	          certiRotations++;
 			for(let i=0;i<certi.length;i++){
