@@ -406,7 +406,7 @@
 			transition:0.6s;
 		 
 		}
-.container .box:nth-child(6):hover #caption #hovv:nth-child(1) {
+		.container .box:nth-child(6):hover #caption #hovv:nth-child(1) {
 			visibility: visible;
 			transition:0.6s;
 			 
@@ -436,7 +436,7 @@
 			transition:0.6s;
 		 
 		}
-
+	
 	
 
 		.dp{
@@ -1245,4 +1245,4 @@
 
           }
 
-         
+          
