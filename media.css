@@ -183,15 +183,16 @@
                font-size: 12px;
            }
            .container {
-               grid-template-columns: 1fr 1fr;
+               grid-template-columns: 1fr  ;
                grid-gap: 10px;
            }
            .container .box{ width: fit-content;
+            margin: 0 auto;
                      }
 
           .container .box img{
-                width: 200px;
-               height: 180px;
+                width: 220px;
+               height: 200px;
               
                 
 
