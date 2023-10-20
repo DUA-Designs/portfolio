@@ -15,7 +15,7 @@
           	}
                 .main{        
                 display: grid;  
-                width:60%;    
+                width:100%;    
                       
 
 
@@ -128,10 +128,10 @@
                .skills{
            
                 
-                width:56%;   
+                width:80%;   
               
               
-               margin:0;
+             
            
 
 
@@ -139,8 +139,8 @@
            }
 
           	.skills .skill1{
-          		width:60px;
-          		height: 50px;
+          		width:70px;
+          		height: 60px;
                     margin: 5px;
                                	}
                .main #dps{
@@ -166,7 +166,7 @@
 		  }
 		 /* This css is for project sections*/
             .back2{
-               width: 56%;
+               width: 100%;
             }
             .exp p{letter-spacing: 1px;
                padding-top: 2%;
@@ -183,14 +183,15 @@
                font-size: 12px;
            }
            .container {
-               grid-template-columns: 1fr;
+               grid-template-columns: 1fr 1fr;
+               grid-gap: 10px;
            }
-           .container .box{ width: 220px;
+           .container .box{ width: fit-content;
                      }
 
           .container .box img{
-                width: 220px;
-               height: 200px;
+                width: 200px;
+               height: 180px;
               
                 
 
@@ -215,16 +216,26 @@
           /* This css is for Certifications section*/
            
             #certinames{
+              
 
-               width:56%;
+               width:90%;
+               height: 70vh;
+              
+               margin: 0 auto;
                 
             }
              #certinames h1{
                font-size: 15px;
              }
+             #certi{
+              
+              width: 70vh;
+             height: 50vh;
+             }
              #certi img{
                width:90%;
                height: 90%;
+               margin-bottom: 0;
              }
 		  #certinames i{
                font-size: 1rem;
@@ -234,7 +245,8 @@
           }
             /* This css is for product contact*/
                .product{
-                    width: 56%;
+                    width:90%;
+                    margin: 0 auto;
                        height: 140px;
                }
                .product .talk {
@@ -251,7 +263,7 @@
           }
                 /* This css is for footer contact*/
 
-           footer{width: 56%;
+           footer{ width:100%;
               }
               .ftname{
                font-size: 15px;
@@ -274,9 +286,12 @@
                     font-size: 10px;
                }
           .switch{
+             
                
-               width: 80px;
+               width: 100px;
                height: 60px;
+               padding: 10px;
+                  margin:0;
 
               
           }
@@ -287,8 +302,8 @@
 
           }
           .switch input{
-               width: 5px;
-               height: 5px;
+               width: 10px;
+               height: 10px;
           }
           #mobile{
                width: 100%;
@@ -298,7 +313,7 @@
                justify-content: space-around;
                border-top: 2px solid #37a7ff;          }
 #mobile1{
-     width: 80%;
+     width: 70%;
 }
 
  .GIT{
