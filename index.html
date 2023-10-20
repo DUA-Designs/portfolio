@@ -2,6 +2,9 @@
  <html>
  <head>
  	<title>My Portfolio</title>
+  
+ 	
+ 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
  
   
 <link rel="icon" type="image/jpg" href="favicon-black.png">
@@ -9,37 +12,51 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css" integrity="sha512-Z0kTB03S7BU+JFU0nw9mjSBcRnZm2Bvm0tzOX9/OuOuz01XQfOpa0w/N9u6Jf2f1OAdegdIPWZ9nIZZ+keEvBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
- <link rel="stylesheet" type="text/css" href="style.css">
+ <link rel="stylesheet" type="text/css" href="mariastyleportmini.css">
+ <link rel="stylesheet" type="text/css" href="media.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+ <script type="text/javascript">
+ 		$(document).ready(function(){
+
+		 
+ 
+			
+	
+
+
+              
+	});
+ </script>
 	 
 </head>
 <body id="bdy"><nav>
 		<div class="myname"> <div><i class="fa-solid fa-image-portrait fa-lg"></i>  D.U.A <span class="sepe">|</span><span class="desi"> DESIGNS</span> </div></div>
 		 
 		<div class="details"> 
-		<div  id="details-hover"><a href="#myself">About</a></div>
+		<div  id="details-hover"><a href="#dps">About</a></div>
 		
 		<div id="details-hover"><a href="#1">Projects</a></div>
-		<div id="details-hover"><a href="#5">Experience</a></div>
+		<div id="details-hover"><a href="#certinames">Certifications</a></div>
 		<div id="details-hover"><a href="#lets">Contact Me</a></div>
 	     </div>
 	</nav>
-	<div class="navalt" >
+	<div class="navalt" onclick="slider()" >
 		<div class="ham" id="icon"  >
 			<div id="first"></div>
 			<div id="second"></div>
 			<div id="third"></div>
 			
-		</div>
+		</div></div>
 		 <div class="options" id="opts" >
-		 	<ul id="options">
-		 		<li>  About </li>
+		 	<ul id="options" onclick="slideback()">
+		 		<li>  <a href="#dps"><span><i class="fa-solid fa-user"></i></span><span>About</span><span>></span></a> </li>
 		 		 
-		 		<li> Projects </li>
-		 		<li><a href="">Experience</a></li>
-		 		<li><a href="#lets">Contact Me</a></li>
+		 		<li> <a href="#1"><span><i class="fa-solid fa-diagram-project"></i></span><span>Projects</span><span>></span></a> </li>
+		 		<li><a href="#certinames"><span><i class="fa-solid fa-certificate"></i></span><span>Certifications</span><span>></span> </a></li>
+		 		<li><a href="#lets"><span><i class="fa-solid fa-envelope"></i></span><span>Contact</span><span>></span> </a></li>
 		 	</ul>
 		 </div>
-	</div>
+	
 
 	<br>
 	<br>
@@ -50,24 +67,22 @@
 		 
 
 	<div class="main">
-		<div id="dps"><img class="dp" src="./images/IMG20230618125208s.jpg" width="250" height="250" alt="my_Image"></div>
+		<div id="dps"><img class="dp" src="./images/IMG20230618125208s.jpg"   alt="my_Image"></div>
 		 
 		<div class="name">
 			<div id="myself">
 			<p>Hi, I am</p>
 			<h1>Uday Aravind.</h1>
 			<h3><em>A Frontend Developer.</em></h3>
-				<h4>I create < <div id="textChange"></div> /> </h4>
-			<br>
+			<h4>I create < <span id="textChange"></span> /> </h4>
+		 
 			<a href="#1" class="know"><button>Know More</button></a>
 			<br>
 			<br>
 		</div>
 
 
-			<div class="icn">
-				 <a href="#certinames">My Certifications |  <i class="fa-solid fa-certificate fa-xl"></i></a> 
-			</div>
+			 
 			</div>
 
 		
@@ -106,57 +121,63 @@
 
 	<div class="container">
 		<div class="box">
-			<div><a href="https://dua-designs.github.io/SurveyForm-fcc-/"> <img class="img-responsive" src="./images/surveyform.png"  width="360px" height="360px" alt="Survey-form-project"></a></div>
+			<div><a href="https://dua-designs.github.io/SurveyForm-fcc-/"> <img class="img-responsive" src="./images/surveyform.png"  alt="Survey-form-project"></a></div>
 				<div  id="caption"><a href="https://dua-designs.github.io/SurveyForm-fcc-/"> <span id="hovv"><  </span>Survey Form<span id="hovv">  /></span>
 				</a></div>
+				<div id="tech"><h6>Technologies used HTML,CSS</h6> </div>
 		</div>
 		<div class="box">
-			<div><a href="https://dua-designs.github.io/tributepage/"> <img class="img-responsive" src="./images/tribute.PNG" width:"360" height="360"</a></div>
+			<div><a href="https://dua-designs.github.io/tributepage/"> <img class="img-responsive" src="./images/tribute.PNG" ></a></div>
 				<div  id="caption"><a href="https://dua-designs.github.io/tributepage/"> 
 				<span id="hovv"><  </span>Tribute Page<span id="hovv">  /></span></a>
 			</div>
+			<div id="tech"><h6>Technologies used HTML,CSS</h6> </div>
 		</div>
 		<div class="box">
-			<div><a href="https://dua-designs.github.io/Documentation/"><img class="img-responsive" src="./images/documentation.PNG" width="360" height="360"></a></div>
+			<div><a href="https://dua-designs.github.io/Documentation/"><img class="img-responsive" src="./images/documentation.PNG" ></a></div>
 				<div  id="caption"><a href="https://dua-designs.github.io/Documentation/">
 					<span id="hovv"><  </span>Documentation<span id="hovv">  /></span></a>
 				</div>
+				<div id="tech"><h6>Technologies used HTML,CSS</h6> </div>
 		</div>
 		<div class="box">
-			<div><a href="https://dua-designs.github.io/Productlandingpage/"><img class="img-responsive" src="./images/plp.PNG" width="360" height="360"></a></div>
+			<div><a href="https://dua-designs.github.io/Productlandingpage/"><img class="img-responsive" src="./images/plp.PNG" ></a></div>
 				<div  id="caption"><a href="https://dua-designs.github.io/Productlandingpage/">
 					<span id="hovv"><  </span>Product Landing Page<span id="hovv">  /></span></a>
 				</div>
+				<div id="tech"><h6>Technologies used HTML,CSS</h6> </div>
 		</div>
 		<div class="box">
-			<div><a href="https://dua-designs.github.io/RanQuoGen/"><img class="img-responsive" src="./images/quote5.PNG" width="360" height="360"></a></div>
+			<div><a href="https://dua-designs.github.io/RanQuoGen/"><img class="img-responsive" src="./images/quote5.PNG" ></a></div>
 				<div  id="caption"><a href="https://dua-designs.github.io/RanQuoGen/">
 					<span id="hovv"><  </span>Random Quote Generator<span id="hovv">  /></span></a>
-				</div>
+				</div><div id="tech"><h6>Technologies used HTML,CSS,JavaScript</h6></div>
 		</div>
 		<div class="box">
-			<div><a href="https://dua-designs.github.io/Drum_Machine/"><img class="img-responsive" src="./images/drummachine.PNG" width="360" height="360"></a></div>
+			<div><a href="https://dua-designs.github.io/Drum_Machine/"><img class="img-responsive" src="./images/drummachine.PNG" ></a></div>
 				<div  id="caption"><a href="https://dua-designs.github.io/Drum_Machine/">
 					<span id="hovv"><  </span>Drum Machine<span id="hovv">  /></span></a>
-				</div>
+				</div><div id="tech"><h6>Technologies used HTML,CSS,JavaScript</h6></div>
 		</div>
-			<div class="box">
-			<div><a href="https://dua-designs.github.io/Calculator/"><img class="img-responsive" src="./images/calc.PNG" width="360" height="360"></a></div>
+		<div class="box">
+			<div><a href="https://dua-designs.github.io/Calculator/"><img class="img-responsive" src="calc.PNG" ></a></div>
 				<div  id="caption"><a href="https://dua-designs.github.io/Calculator/">
 					<span id="hovv"><  </span>Calculator<span id="hovv">  /></span></a>
-				</div>
+				</div><div id="tech"><h6>Technologies used HTML,CSS,JavaScript</h6></div>
 		</div>
 		<div class="box">
-			<div><a href="https://dua-designs.github.io/25-5clock/"><img class="img-responsive" src="./images/clock.PNG" width="360" height="360"></a></div>
+			<div><a href="https://dua-designs.github.io/25-5clock/"><img class="img-responsive" src="./images/clock.PNG" ></a></div>
 				<div  id="caption"><a href="https://dua-designs.github.io/25-5clock/">
 					<span id="hovv"><  </span>25+5 Clock<span id="hovv">  /></span></a>
-				</div>
+				</div><div id="tech"><h6>Technologies used HTML,CSS,JavaScript</h6></div>
 		</div>
+
 		<div class="box">
-			<div><a href="https://dua-designs.github.io/react_app/"><img class="img-responsive" src="./images/fitpeoreact.PNG" width="360" height="360"></a></div>
+			<div><a href="https://dua-designs.github.io/react_app/"><img class="img-responsive" src="./images/fitpeoreact.PNG"></a></div>
 				<div  id="caption"><a href="https://dua-designs.github.io/react_app/">
 					<span id="hovv"><  </span>UI Design<span id="hovv">  /></span></a>
 				</div>
+				<div id="tech"><h6>Technologies used HTML,CSS,Javascript,React JS</h6></div>
 		</div>
 
 
@@ -166,7 +187,7 @@
 </div>
 <br>
  
-<div class="back3" style="display:none;">
+<div class="back3" style="display: none;">
 	<div class="exp2">
 		<p id="5">HAPPY <small>-Note this section is a replica-</small></p>
 		<h1 class="sp2"><span class="work">Client </span> 
@@ -179,7 +200,7 @@
 		<div class="linehp"></div></h1>
 	</div>
 
-	<div class="container3" >
+	<div class="container3">
 		<div class="box" id="box1">
 			<h1>Pixel Perfect design</h1>
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore omnis sapiente hic odio quod voluptates alias nobis excepturi perspiciatis natus voluptatem exercitationem voluptas quibusdam deserunt impedit libero rerum adipisci, quos nisi velit sunt! Quibusdam magni laborum perspiciatis, eaque quos nobis?</p>
@@ -208,20 +229,20 @@
 	</div>
 </div>
 <div id="certinames"><h1>My Certifications</h1>
-	<div id="chevrondiv">
+
+ <div id="chevrondiv">
  	<div id="chevron"><i class="fa-solid fa-chevron-left"  onclick="left()"></i></div>
-<div id="certi">
+      <div id="certi">
 	<img src="./images/testdome.PNG" id="testdome" alt="testdome-Certification">
-	<img src="./images/certi.png" id="freeCodeCamp" alt="Responsive-Web-Design-Certification">
+	<img  class="img-responsive" src="./images/certi.png" id="freeCodeCamp" alt="Responsive-Web-Design-Certification">
 
-<img src="./images/javascript_certi.PNG" id="fccscript" alt="javascript-Algorithm-and-Data-Structures-Certification">
-<img src="./images/Fedl.PNG" alt="Front End Libraries Certification" id="fedl">
+       <img class="img-responsive" src="./images/javascript_certi.PNG" id="fccscript" alt="javascript-Algorithm-and-Data-Structures-Certification">
+         <img src="./images/Fedl.PNG" alt="Front End Libraries Certification" id="fedl">
+      </div>
 
-</div>
 
-<div  id="chevron"><i class="fa-solid fa-chevron-right"  onclick="right()"></i></div>
+      <div  id="chevron"><i class="fa-solid fa-chevron-right"  onclick="right()"></i></div>
  </div>
-
 </div>
 <br>
 <br>
@@ -240,33 +261,59 @@
 	</form>
 </div>
 <div id="confirm"> 
- <i class="fa-solid fa-circle-check"></i><h1>We have received your response and  will contact you shortly.</h1></div>
+ <i class="fa-solid fa-circle-check"></i><h1>We have received your response and you will be contacted soon</h1></div>
 <footer>
 	<div class="ftname"><h1><span class="ud">UDAY</span><br>
 		 <span class="ara"> ARAVIND</span></h1>
-		<div class="lineft"></div></div>
+		<div class="lineft"></div>
+	</div>
 	<div class="fticons">
 		<div class="glow"><a href=""><i class="fa-brands fa-twitter fa-xl"  > </i> Twitter</a></div>
 		<div class="glow"><a href=""><i class="fa-brands fa-dribbble fa-xl"> </i> Dribbble</a></div>
 		<div class="glow"><a href=""><i class="fa-brands fa-behance fa-xl"> </i> Behance </a></div>
 		<div class="glow"><a href="https://github.com/DUA-Designs"> <i class="fa-brands fa-github fa-xl"> </i> GitHub</a></div>
 	</div>
-	<div class="design"><span>Designed by @D.U.A | Developed by</span> Inspanner </div>
+	 
+		<div id="mobile"><div id="mobile1"><div class="design"><span>Designed by @D.U.A | Developed by</span> Inspanner </div>
 	<div class="copy"> <p>Copyright &copy; 2023 Uday Aravind. All Rights Reserved</p></div>
+</div>
 
-	<div class="Switch"> <label>Switch Appearance</label><br>
-		<div class="options" onclick="app();">
+	<div class="switch"> <label>Switch Appearance</label><br>
+		<div class="optionss" onclick="theme();">
 		<label >Dark</label>
 		<input type="radio" id="Dark" name="change" > 
 		<label>Light</label>
 		<input type="radio" id="Light" name="change">
 	</div>
 	</div>
+</div>
+	 
 	
 </footer>
 
 
 <script type="text/javascript">
+let slid=0;
+	function slider(){
+		slid++;
+		
+		 			let opt=document.getElementById("opts");
+
+ 
+		if(slid%2!==0){
+			opt.style.left=0;
+		}
+		else{
+			opt.style.left="-120%";
+		}
+		 
+	}
+	function slideback(){
+		slid++;
+	let opt=document.getElementById("opts");
+	opt.style.left="-120%";
+
+	}
 
 	let certiRotations=0;
 	const  certi=["testdome","freeCodeCamp","fccscript","fedl"];
@@ -275,8 +322,8 @@
 
 
  
-		const hamburger= document.querySelector(".navalt");
-		const opts= document.querySelector("opts");
+		const hamburger= document.querySelector(".ham");
+	 
 
 		hamburger.addEventListener("click",() => {
 			hamburger.classList.toggle("show");
@@ -287,11 +334,7 @@
 		})
 
 
-		const scrollLeft=document.getElementById("chevron-left");
-		const scrollRight=document.getElementById("chevron-right");
-
-		scrollLeft.addEventListener("click",()=>{scrollLeft.classList.toggle("moveleft")});
-		scrollRight.addEventListener("click",()=>{scrollRight.classList.toggle("moveright")});
+		
 
 
 
@@ -341,7 +384,7 @@
 
 
 
-	function app(){
+	function theme(){
 		const dark= document.getElementById("bdy");
 	const light=document.getElementById("bdy");
 
@@ -422,6 +465,10 @@ function confirm(){
 
 	
 </script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 
 
 </body>
