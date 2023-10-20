@@ -75,7 +75,7 @@ font-family: 'Cabin Condensed', sans-serif;
 			justify-content: space-between;
 			 
 		 
-			opacity: 0.9;
+			 
 
 
 			 
@@ -85,6 +85,9 @@ font-family: 'Cabin Condensed', sans-serif;
 			text-decoration: none;
 			font-size: 20px;
 			color: white;
+			font-weight: 600;
+		 
+
 			 
 			 
 			
@@ -104,6 +107,7 @@ font-family: 'Cabin Condensed', sans-serif;
 		}
 		nav .details  #details-hover:hover{
 			background-color: black;
+
 			
 			 
 
@@ -112,6 +116,10 @@ font-family: 'Cabin Condensed', sans-serif;
 			 
 			transition: 0.2s ease;
 
+
+		}
+		nav .details  #details-hover:hover a{
+				opacity: 1;
 
 		}
 		.main{
@@ -128,13 +136,14 @@ font-family: 'Cabin Condensed', sans-serif;
 			align-items: center;
 			 
 		}
+		.main .dp{width: 250px;height: 250px;}
 		.main .order{
 			display: flex;
 			background-color: yellow;
 
 		}
 		.main .name { 
-			width: 380px;
+			width: 400px;
 		 
 			 
 			 
@@ -142,7 +151,7 @@ font-family: 'Cabin Condensed', sans-serif;
 			display: grid;
 		 
 			 
-			padding: 2% 0;
+			padding: 2% 1%;
 		 
 		}
 		.main .name p{
@@ -178,15 +187,14 @@ font-family: 'Cabin Condensed', sans-serif;
 
 		}
 		.main .name h4 #textChange{
-		font-size: 20px;
+		 
 			color: white;
 			font-weight: 400;
 			display: inline;
 
 		}
 		.main .name h4 #textChange::before{
-				font-size: 18px;
-				font-style: italic;
+			 				font-style: italic;
 				content: "";
 			color: cyan;
 			font-weight: 600;
@@ -222,11 +230,11 @@ font-family: 'Cabin Condensed', sans-serif;
 			border: 2px solid white;
 			color: white;
 			font-size: 25px;
-			padding: 1% 1%;
+			padding: 1% ;
 			 background:transparent;
 			border-radius: 30px;
-			margin-top: -2%;
-			margin-bottom: 1%;
+		
+			margin:3%;
 
 		}
 		.main .name button:hover{
@@ -317,12 +325,13 @@ font-family: 'Cabin Condensed', sans-serif;
 			 
 		}
 		.container .box{
-			 background-color: yellow;
+			 
 			 display: grid;
-			 align-items: center;
+			 align-content: center;
+			 width: fit-content;
 			 			 
 
-			height: fit-content;			box-shadow: 0 0 5px 3px cyan;
+			height: fit-content;		border:2px solid white;
 			 
 
 			 
@@ -333,19 +342,24 @@ font-family: 'Cabin Condensed', sans-serif;
 			 
 
 
+		}
+		.container .box img{
+			width: 360px;
+			height: 360px;
 		}
 		.container .box:hover{
 			cursor: pointer;
 		}
 		.container .box #caption{
 			width: 100%;
-			margin-top: -10px;
-			height: 40px;
+		 
+			height: fit-content;
 			 
 			background-color: #303841;
 			color: white;
 			text-align: center;
 			padding: 5px 0;
+		 
 		 
 			font-size: 20px;
 			 
@@ -355,7 +369,19 @@ font-family: 'Cabin Condensed', sans-serif;
 			visibility: hidden;
 			color: red;
 			font-size: 25px;
+			 
 			
+		}
+		.container .box #tech{
+			background-color: #303841;
+		}
+		.container .box #tech h6{
+			 text-align: center;
+			 margin: auto;
+			 font-size: 13px;
+			 font-weight: 400;
+			 color:#dfdfdf;
+			 padding: 2px 0;
 		}
 		.container .box:nth-child(1):hover #caption #hovv:nth-child(1) {
 			visibility: visible;
@@ -615,7 +641,7 @@ font-family: 'Cabin Condensed', sans-serif;
 		}
 
 		.product{
-			  background:radial-gradient(circle,rgba(73,22,94,1)25%,rgba(0,0,0,1)100%);
+			 
 			 
 			
           text-align: center;
@@ -675,7 +701,7 @@ font-family: 'Cabin Condensed', sans-serif;
 			text-align: center;
 			font-size: 25px;
 			color: white;    
-			padding: 10px;
+			padding: 5px;
 
 		}
 		.ftname .ud{
@@ -691,9 +717,9 @@ font-family: 'Cabin Condensed', sans-serif;
 		       	width: 60%;
 			display: flex;
 			align-items: center;
-			justify-content: space-between;
+			justify-content: space-around;
 		 
-		 margin:0 auto;
+		 margin:2vh auto;
 			padding: 2%;
 
 			 
@@ -714,14 +740,16 @@ font-family: 'Cabin Condensed', sans-serif;
 
 		}
 		.design{
+
 			border-top: 2px solid #37a7ff;
 
 			text-align: center;
 			font-size: 20px;
 			 
 			 padding: 4% 0;
-			 background-color: #322e45;
+			
 			 color: white;
+			  background-color: #322e45;
 
 		}
 		.design span{
@@ -734,7 +762,7 @@ font-family: 'Cabin Condensed', sans-serif;
 		.glow:hover{
 			  
 			cursor: pointer;
-			transform: translateY(4px);
+			transform: translateY(3px);
 			 
 			transition: 0.2s ease-in-out;
 			 
@@ -791,12 +819,12 @@ font-family: 'Cabin Condensed', sans-serif;
 		 	justify-content: space-between;
 		 	align-items: center;
 		 	flex-wrap: wrap;
-		 	padding: 3% 1%;
+		 	padding: 3% 3%;
 		 	width: 50%;
 
-		 	 
-		 	height: 20vh;
-		margin:0 auto;
+		 	 margin: 0 auto;
+		  
+		
 		 	
 		 	
 		 	border-top: 1px solid white;
@@ -805,14 +833,14 @@ font-family: 'Cabin Condensed', sans-serif;
 		 	box-shadow:inset 0 0 5px 3px  #ada7af;
 		 
 		 	border-radius: 5%;
-		 	width: 110px;
+		 	width: 15%;
 		 	height: 14vh;
 		 	cursor: pointer;
 		 	 
 		 	text-align: center;
 		 	display: grid;
 		    align-items: center;
-		    padding: 2%;
+		    padding: 1%;
 
 
 
@@ -843,7 +871,7 @@ font-family: 'Cabin Condensed', sans-serif;
 		  .skills .skill1 h4{
 		  	font-weight: 400;
 		  	color: white;
-		  	 font-family: 'Roboto', sans-serif;
+		  	 
 		  }
 
 
@@ -884,7 +912,7 @@ font-family: 'Cabin Condensed', sans-serif;
           }
 
 
-          .Switch{
+          .switch{
           	width: 120px;
           	height: 80px;
           	float: right;
@@ -894,25 +922,25 @@ font-family: 'Cabin Condensed', sans-serif;
 
           }
 
-          .Switch label{
+          .switch label{
           	  
           	color: white;
           	font-size: 12px;
 
           }
 
-          .Switch .options{
+          .switch .optionss{
           	display: none;
            
           }
 
-          .Switch:hover .options{
+          .switch:hover .optionss{
           	display: block;
           	transition: 0.8s ease;
           }
 
           .GIT{
-          	 background:radial-gradient(circle,rgba(73,22,94,1)25%,rgba(0,0,0,1)100%);
+          	 
 			 
 			 padding: 5% 2%;
           
@@ -964,11 +992,13 @@ font-family: 'Cabin Condensed', sans-serif;
 
           }
           .navalt{
-           
-          	width: 50%;
+          	position: absolute;
+           margin: 20px;
+          
+          	 z-index: 2;
        
-          	margin-left: 20px;
-          	transition: 0.3s;
+           
+       
 
           	 
           
@@ -980,14 +1010,15 @@ font-family: 'Cabin Condensed', sans-serif;
 
           .navalt .ham{
            
-          	margin-bottom: 5px;
+          	 
           	 
           	cursor: pointer;
+       
           	 
-          	height: 50px;
+          	height: 30px;
           	display: none;
-          	padding: 5px;
-          	width: 100px;
+          	 
+          	width: 100%;
           	 
 
 
@@ -998,15 +1029,20 @@ font-family: 'Cabin Condensed', sans-serif;
 
           .navalt .ham>div {
           	background-color: white;
-          	width: 30px;
-          	height: 2px;
-          	margin:10px 0;
+          	width: 20px;
+          	height: 1px;
+          	margin:8px 0;
 
           }
-          .navalt .options{
-          	 
-          	margin: 0 40px;
-          	display: none;
+            .options{
+          	position: absolute;
+          	top: 50px;
+          	width: 50%;
+        background-color: red;
+          	 left: -120%;
+          	 transition: 0.4s ease;
+
+        
 
 
           	 
@@ -1017,7 +1053,7 @@ font-family: 'Cabin Condensed', sans-serif;
           	 
           }
 
-          .navalt .options ul{
+           .options ul{
           	list-style: none;
           	 
 
@@ -1025,25 +1061,36 @@ font-family: 'Cabin Condensed', sans-serif;
 
           }
 
-          .navalt .options ul li{
-          	cursor: pointer;
+          .options ul li{
+        
           	
           	color: white;
           padding: 10px;
+
          
 
           }
 
-           .navalt .options ul li a{
+            .options ul li a{
            	text-decoration: none;
            	color: white;
+           	font-size: 15px;
+           	  display: flex;
+           	    	cursor: pointer;
+          justify-content: space-between;
            
         
            }
+             .options ul span{
+           	display: block;
+
+           }
+             .options ul li:hover{
+            	background-color: black;
+            }
 
            #confirm{
-           	 background:radial-gradient(circle,rgba(73,22,94,1)25%,rgba(0,0,0,1)100%);
-			 
+           	 
 			
           padding: 5% 2%;
           
@@ -1108,9 +1155,7 @@ font-family: 'Cabin Condensed', sans-serif;
 
 
             }
-             #certi{
-             	 
-             }
+             
            
             
              #certi img{
@@ -1137,127 +1182,5 @@ font-family: 'Cabin Condensed', sans-serif;
 
 
 
-
-          @media only  screen and (max-width: 500px) {
-          	*{
-          		margin: 0;
-          		padding: 0;
-          	}
-          	nav{
-          		display: none;
-          	}
-
-          	.container3{
-          		display: grid;
-
-          		 justify-content: center;
-          		align-items: center;
-          	}
-          	.container3 .box{
-          		width: 350px;
-
-          	}
-          	.container3 .box h1,p,h4{
-          		 
-          		padding: 10px;
-          	}
-          	.container{
-          		display: grid;
-          		align-items: center;
-
-          	}
-          	.container .box{
-          		width:  350px;
-          		text-align: start;
-          	}
-
-          	.navalt .ham{
-          		display: block;          	}
-
-           
-
-            .navalt.show .ham  #first{
-          		transform: rotate(45deg)translateY(17px); 
-          		transition: 0.3s ease;
-
-          	}
-          	.navalt.show .ham  #second{
-          		visibility: hidden;
-          	}
-          	.navalt.show .ham #third{
-          		transform: rotate(-45deg)translateY(-17px);
-          		transition: 0.3s ease;
-          	}
-
-          	.navalt.show .options{
-          		display: block;
-          		transition: 0.3s ease;
- 
-          	}
-
-          	.skills .skill1{
-          		width: 60px;
-          		height: 7vh;
-          	}
-
-          	.dp{
-          		width: 120px;
-          		height: 120px;
-          	}
-          	.skills  i{
-		  	font-size: 1em;
-		  	
-		  }
-		  .skills .skill1 h4{
-		  	font-size: 8px;
-		  }
-
-		  .main .name p{
-			font-size: 10px;
-			color: white;
-			margin-top: -20px;
-
-
-
-		}
-
-		.main .name h1{
-			font-size: 20px;
-			letter-spacing: -2px;
-			color: white;
-            font-weight: 500;
-            margin-top: -3%;
-            
-		}
-		 
-		.main .name h3{
-			font-size: 10px;
-			color: white;
-			margin-top: -3%;
-		}
-		.main .name button{
-			width: 70px;
-			height: 15px;
-			border: 1px solid white;
-			color: white;
-			font-size: 10px;
-			padding: 1% 1%;
-			 
-
-		}
-
-		.name .icn{
-			color: white;
-			font-size: 9px;
-			 
-		}
-		 
-		.name .icn a img{
-			border-radius: 10px;
-		}
-
-
-
-          }
 
           
