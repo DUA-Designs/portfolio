@@ -160,19 +160,28 @@ transition: 0.4s ease-in-out;
 		}
 
 		#back-to-top{
-			position:absolute;
+			position:fixed;
 			background-color: white;
-			width: 20px;
-			height: 20px;
+			width: 21px;
+			height: 21px;
+			padding: 2px;
 			display: grid;
 			align-items: center;
 			text-align: center;
-			top: 150%;
-			left: 96%;
+			top: 80%;
+			left: 97%;
+		
+			border-radius: 20%;
+		
 			
 		}
 		#back-to-top i{
+			font-size: 1.3rem;
+			color: orangered;
 
+		}
+		#back-to-top:hover{
+			cursor:pointer;
 		}
 		.main{
 
