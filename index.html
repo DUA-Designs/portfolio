@@ -398,23 +398,27 @@ let slid=0;
 
 	 
 		
-	 
-	if(x==true){
+	if(x===true){
 	  	
 	  dark.style.backgroundColor="#37324b";
-	}
+	  document.getElementById('nav-light').style.backgroundColor="#be3144";
+	    document.getElementById('opts').style.backgroundColor="#be3144";
+	    document.getElementById('opts').style.border="none";
+	    document.getElementById('nav-light').style.border="none";
 
-	console.log(x);
+	}
 
 	
-	if(y==true){
+
+	
+	if(y===true){
 		
 		light.style.backgroundColor="#0f6efd";
-		document.getElementById('nav-light').style.backgroundColor="#0f6efd";
+	document.getElementById('nav-light').style.backgroundColor="#0f6efd";
 	document.getElementById('nav-light').style.border="1px solid white";
-
+	  document.getElementById('opts').style.backgroundColor="#0f6efd";
+	  document.getElementById('opts').style.border="1px solid white";
 	}
-	console.log(y);  
 }
 
 
