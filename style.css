@@ -3,12 +3,13 @@
 			margin:0px;
 			padding: 0px;
 font-family: 'Cabin Condensed', sans-serif;
-transition: 0.4s ease-in-out;
+
 		}
 
 
 		html{
 			scroll-behavior: smooth;
+			transition: 0.2s linear;
 
 
 		}
@@ -160,6 +161,7 @@ transition: 0.4s ease-in-out;
 		}
 
 		#back-to-top{
+		
 			position:fixed;
 			background-color: #ff6005;
 			width: 21px;
@@ -170,8 +172,10 @@ transition: 0.4s ease-in-out;
 			text-align: center;
 			top: 80%;
 			left: 97%;
+			z-index: 99;
 		
 			border-radius: 20%;
+				display: none;
 		
 			
 		}
@@ -874,10 +878,16 @@ transition: 0.4s ease-in-out;
 		 	text-decoration: none;
 		 }
 
+		 .skillsContainer{
+		display: none;
+		 }
+
 
 
 		 .skills{
+
 		 	display: flex;
+	 
 		 	justify-content: space-between;
 		 	align-items: center;
 		 	flex-wrap: wrap;
@@ -885,7 +895,8 @@ transition: 0.4s ease-in-out;
 		 	width: 50%;
 
 		 	 margin: 0 auto;
-		  
+
+
 		
 		 	
 		 	
