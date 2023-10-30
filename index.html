@@ -264,11 +264,11 @@
 	   <button class="touch" id="touchbtn" onclick="Touch();">Get in touch now</button> 
 </div>
 <div class="GIT" id="git">
-	<form method="post" onsubmit="check();">
+	<form method="post" onsubmit="return false">
 		<h3>Please provide your contact information</h3><br>
 		 <input type="text" name="" required="" placeholder="Name" class="data"><br>
 		 <input type="text" name="" placeholder="Email Id" id="email" class="data" required=""><br>
-		 <button type="Submit"  name="" id="sub" onclick="confirm();">Submit</button>
+		 <button type="Submit"  name="" id="sub" onclick="check();">Submit</button>
 	</form>
 </div>
 <div id="confirm"> 
@@ -434,21 +434,30 @@ let slid=0;
 
 
 
-function check(){
+ function check(){
 	let yourem= document.getElementById("email").value;
-	console.log(yourem);
+	 
 	let z=yourem.indexOf("@");
 	let d=yourem.lastIndexOf(".");
 	let l=yourem.length;
-	console.log(z,d,l);
+	 console.log(yourem);
 	if((z<1)||(d<z+2)||(d+2>=l)){
 		alert("Please enter a valid Email Id");
-		return false;
+ return "";
 	}
-	return true;
+	else if(document.getElementsByClassName("data")===""){
+		alert("Please enter valid username");
+		return "";
+	}
 
+	const con=document.getElementById("confirm");
+	const git=document.getElementById("git");
+	git.style.display="none";
+	con.style.display="block";
+ 
 
  
+
 }
 
 
@@ -468,13 +477,7 @@ function Touch(){
 
 }
 
-function confirm(){
-	const con=document.getElementById("confirm");
-	const git=document.getElementById("git");
-	git.style.display="none";
-	con.style.display="block";
-
-}
+ 
 
 
 
