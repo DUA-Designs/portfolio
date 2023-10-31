@@ -349,11 +349,8 @@ font-family: 'Cabin Condensed', sans-serif;
 		.exp h1{letter-spacing: 2px;
 			font-size: 45px;
 			font-weight: 700;
+			letter-spacing: -1px;
 	 
-		}
-		.exp .sp1 .work{
-			color: #37a7ff;
-
 		}
 		 
 		.exp  .sp1 .line2 {
